@@ -8,13 +8,14 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
+#ifdef DEBUG
 	freopen("Tex Quotes.in", "r", stdin);
 	freopen("Tex Quotes.out", "w", stdout);
-	int c;
-	_Bool b = 1;
+#endif
+	int c, b = 1;
 	while ((c = getchar()) != EOF) {
 		if (c == '"') {
-			printf("%s", b ? "“" : "”");
+			printf("%s", b ? "``" : "\'\'");
 			b = !b;
 		}
 		else

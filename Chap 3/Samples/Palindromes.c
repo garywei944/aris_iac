@@ -23,7 +23,9 @@ char r(char c) {
 }
 
 int main(int argc, char *argv[]) {
+#ifdef DEBUG
 	freopen("Palindromes.in", "r", stdin);
+#endif
 	char s[30];
 	while (scanf("%s", s) == 1) {
 		int len = strlen(s);
