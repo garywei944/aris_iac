@@ -14,3 +14,8 @@ set /a t=%n%/100
 
 start https://onlinejudge.org/external/%t%/%n%.pdf
 ```
+
+## 常见错误
+1. 输出单词拼写错误
+2. 输出数字对齐
+3. 输入数据行末尾空格
